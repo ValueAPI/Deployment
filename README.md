@@ -2,4 +2,4 @@
 
 This project provides examples to deploy the ValueAPI server.
 
-- [Server only](./ydocker-compose.yml)
+- [Server only](./docker-compose.yml)
