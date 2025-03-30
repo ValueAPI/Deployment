@@ -1,0 +1,8 @@
+services:
+  app:
+    image: joleaf/value-api-server
+    ports:
+      - 8074:80
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped
