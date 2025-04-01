@@ -1,0 +1,11 @@
+services:
+  app:
+    image: joleaf/value-api-frontend
+    ports:
+      - 8082:8082
+    restart: unless-stopped
+    environment:
+      STREAMLIT_SERVER_ADDRESS: 0.0.0.0
+      STREAMLIT_SERVER_PORT: 8082
+      VALUE_API_SERVER: http://your-server:8081
+      CONTEXT: local
